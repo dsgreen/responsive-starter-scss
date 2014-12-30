@@ -1,0 +1,29 @@
+/* 	
+	Responsive Starter 12.30.14
+	Demo column styles
+*/
+/**
+ * ##################################################
+ * ##################################################
+ * 	
+ * DEMO FORMATTING ONLY
+ *  
+ */
+.demo .col,
+.demo .column,
+.demo .columns {
+  background-color: #EAEAEA;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+/*
+  add some spacing for demo
+*/
+@media screen and (min-width: 768px) {
+  .demo .row,
+  .demo .col,
+  .demo .column,
+  .demo .columns {
+    margin-bottom: 6px;
+  }
+}

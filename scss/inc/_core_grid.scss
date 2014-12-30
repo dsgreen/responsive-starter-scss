@@ -1,0 +1,189 @@
+/**
+ * ##################################################
+ * ##################################################
+ *  
+ * GRID
+ *  
+ */
+
+/* columns */
+.row,
+.col,
+.column,
+.columns {
+  display: block;
+  @media screen and (max-width: 767px) {
+    /*
+    space rows/cols out for mobile
+    remove if you don't want vertical spacing between rows/columns
+    */
+    margin-bottom: 18px;
+  }
+}
+form .row,
+form .col,
+form .column,
+form .columns {
+  margin-bottom: 0;
+}
+.row {
+  clear: both;
+}
+
+/**
+ * --------------------------------------------------
+ * TABLET PORTRAIT 768
+ * --------------------------------------------------
+ */
+
+/*
+ grid percentages from Bootstrap: http://getbootstrap.com/css/#grid
+*/
+@media only screen and (min-width: 768px) {
+
+  /* initial column style */
+  /* float tablet & above */
+  .col,
+  .column,
+  .columns {
+    float: left;
+    padding: 0 10px;
+  }
+
+  /* nested cols
+     use shorthand 'col' for nested cols */
+  .col .col:first-of-type,
+  .column .col:first-of-type,
+  .columns .col:first-of-type {
+    padding-left: 0;
+  }
+  .col .col:last-child,
+  .column .col:last-child,
+  .columns .col:last-child {
+    padding-right: 0;
+  }
+
+  .col-1,
+  .one {
+    width: 8.33333333%;
+  }
+
+  .col-2,
+  .two {
+    width: 16.66666667%;
+  }
+
+  .col-3,
+  .three,
+  .one-quarter {
+    width: 25%;
+  }
+
+  .col-4,
+  .four,
+  .one-third
+  {
+    width: 33.33333333%;
+  }
+
+  .col-5,
+  .five {
+    width: 41.66666667%;
+  }
+
+  .col-6,
+  .six,
+  .half {
+    width: 50%;
+  }
+
+  .col-7,
+  .seven {
+    width: 58.33333333%;
+  }
+
+  .col-8,
+  .eight,
+  .two-thirds {
+    width: 66.66666667%;
+  }
+
+  .col-9,
+  .nine,
+  .three-quarters {
+    width: 75%;
+  }
+
+  .col-10,
+  .ten {
+    width: 83.33333333%;
+  }
+
+  .col-11,
+  .eleven {
+    width: 91.66666667%;
+  }
+
+  .col-12,
+  .twelve,
+  .all {
+    width: 100%;
+  }
+
+  /* offsets */
+  .offset-1,
+  .offset-one {
+    margin-left: 8.33333333%;
+  }
+
+  .offset-2,
+  .offset-two {
+    margin-left: 16.66666667%;
+  }
+
+  .offset-3,
+  .offset-three {
+    margin-left: 25%;
+  }
+
+  .offset-4,
+  .offset-four {
+    margin-left: 33.33333333%;
+  }
+
+  .offset-5,
+  .offset-five {
+    margin-left: 41.66666667%;
+  }
+
+  .offset-6,
+  .offset-six {
+    margin-left: 50%;
+  }
+
+  .offset-7,
+  .offset-seven {
+    margin-left: 58.33333333%;
+  }
+
+  .offset-8,
+  .offset-eight {
+    margin-left: 66.66666667%;
+  }
+
+  .offset-9,
+  .offset-nine {
+    margin-left: 75%;
+  }
+
+  .offset-10,
+  .offset-ten {
+    margin-left: 83.33333333%;
+  }
+
+  .offset-11,
+  .offset-eleven {
+    margin-left: 91.66666667%;
+  }
+
+}

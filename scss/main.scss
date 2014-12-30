@@ -1,0 +1,58 @@
+/*
+	Responsive Starter SCSS
+	v2. 12.30.14: https://github.com/dsgreen/responsive-starter-scss
+	v1. 04.15.13: https://github.com/dsgreen/responsive-starter
+	Douglas Green: douglasgreen.com
+
+	Inspiration:
+	http://getbootstrap.com/
+	http://foundation.zurb.com/
+	http://www.getskeleton.com/
+	http://html5boilerplate.com/
+*/
+
+/*
+ Google fonts
+*/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700');
+//@import url('http://fonts.googleapis.com/css?family=Lato:400,300,400italic,700');
+
+/*
+ Classic fonts
+*/
+// "Helvetica Neue", Helvetica, Geneva, Arial, sans-serif;
+// "Lucida Grande", Lucida, Verdana, sans-serif;
+// "Times New Roman", Times, serif;
+// Georgia, serif;
+// "Courier New", Courier, monospace;
+// "Lucida Console", Monaco, monospace;
+
+$sans:      "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $serif:     "Noto Serif", Georgia, serif;
+
+/*
+ colors
+*/
+$your_color_name: #333;
+
+/*
+ core
+*/
+@import 'inc/normalize';
+@import 'inc/core_type';
+@import 'inc/core_forms';
+@import 'inc/core_layout';
+@import 'inc/core_classes';
+@import 'inc/core_grid';
+@import 'inc/core_color';
+
+/*
+ custom & IE
+*/
+@import 'inc/custom';
+@import 'inc/ie';
+
+/*
+ for grid demo
+*/
+@import 'inc/demo';

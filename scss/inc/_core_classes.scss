@@ -1,0 +1,119 @@
+/**
+ * ##################################################
+ * ##################################################
+ *  
+ * CLASSES
+ *  
+ */
+
+/*
+ unstyled lists
+*/
+ul.unstyled,
+ol.unstyled{
+  li {
+    list-style-type: none;
+  }
+}
+ul.no-indent,
+ol.no-indent,{
+  padding-left: 0;
+}
+
+/*
+ floats, clearing
+*/
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+
+/*
+ text alignment, nowrap
+ --
+ http://getbootstrap.com/css/#type-alignment
+ http://foundation.zurb.com/docs/utility-classes.html
+*/
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.nowrap {
+  white-space: nowrap;
+}
+//.center -- old center class, revisit or remove TODO
+
+/*
+ clearfix
+ --
+ http://css-tricks.com/snippets/css/clear-fix/
+*/
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after,
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+}
+.clearfix:after,
+.row:after,
+.container:after {
+  clear: both;
+}
+/* for old IE */
+.oldie {
+  .clearfix,
+  .row,
+  .container {
+    zoom: 1;
+  }
+}
+
+/*
+ visibility
+ --
+ http://getbootstrap.com/css/#helper-classes-show-hide
+ http://foundation.zurb.com/docs/utility-classes.html
+ http://html5boilerplate.com/
+*/
+.invisible {
+  visibility: hidden;
+}
+.hidden {
+  display: none;
+}
+
+/*
+ responsive image
+ --
+ http://getbootstrap.com/css/#images-responsive
+*/
+img.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+ basic button style
+ --
+ (moved to form css)
+*/
+
+/*
+ spacer between sections
+*/
+hr.divider {
+  margin: 2em 0;
+}

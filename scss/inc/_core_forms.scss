@@ -1,0 +1,136 @@
+/**
+ * ##################################################
+ * ##################################################
+ *  
+ * FORMS
+ *  
+ */
+/**
+ * -------------------------------------------------- 
+ * MOBILE & UP
+ * --------------------------------------------------
+ */
+label {
+  display: block;
+//  font-weight: bold;
+}
+input,
+select,
+textarea {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  width: 100%;
+}
+.radio input,
+.checkbox input,
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  float: left;
+  margin: 0.5em 0.5em;
+}
+.radio,
+.checkbox {
+  clear: both;
+}
+.radio label,
+.checkbox label {
+  float: left;
+  margin-bottom: 0.5em;
+}
+.radio p,
+.checkbox p {
+  margin-bottom: 0.5em;
+}
+input.btn,
+input.button,
+input[type="submit"],
+button,
+a.btn,
+a.button {
+  margin: 1em 0;
+  padding: 0.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  clear: both;
+  background-color: #eaeaea;
+  transition: all 0.1s ease;
+  // change width, add rounding as appropriate
+  width: 15em;
+//  border-radius: 0.4em;
+}
+label.hidden {
+  margin-left: -10000em;
+  width: 0;
+  float: none;
+}
+
+/*
+ basic button style
+*/
+a.btn,
+a.button {
+  display: block;
+  text-align: center;
+}
+
+/*
+ form color
+*/
+input,
+select,
+textarea,
+button {
+  border: 0.1em solid #dadada;
+}
+
+input:hover,
+input:focus,
+input:active,
+textarea:hover,
+textarea:focus,
+textarea:active,
+select:hover,
+select:focus,
+select:active {
+  border-color: #999;
+}
+
+input.btn:hover,
+input.btn:focus,
+input.button:hover,
+input.button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+button:hover,
+button:focus {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+a.btn,
+a.button,
+a.btn:link,
+a.button:link,
+a.btn:active,
+a.button:active,
+a.btn:visited,
+a.button:visited {
+  color: #333;
+  text-decoration: none;
+  border: 0.1em solid #dadada;
+}
+a.btn:hover,
+a.button:hover,
+a.btn:focus,
+a.button:focus {
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+
+.req,
+.required {
+  color: red;
+}

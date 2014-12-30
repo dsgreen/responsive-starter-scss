@@ -1,0 +1,44 @@
+/**
+ * ##################################################
+ * ##################################################
+ *  
+ * IE
+ *  
+ */
+/*
+ IE <= 10 adds borders on radio/checkbox elements
+ inherited from input style
+*/
+input[type="radio"],
+input[type="checkbox"] {
+  border: none;
+}
+.ie {}
+.ie9 {}
+.ie8 {}
+.ie7 {}
+.lte-ie9 {}
+.lt-ie9 {
+  /*
+   nested columns:
+   add .first/.last classes for IE 8 support
+  */
+  .col .col.first,
+  .column .col.first,
+  .columns .col.first {
+    padding-left: 0;
+  }
+  .col .col.last,
+  .column .col.last,
+  .columns .col.last {
+    padding-right: 0;
+  }
+  /*
+   main navigation list
+   add .first class for IE 8 support
+  */
+  nav li.first a {
+    margin-left: 0;
+  }
+}
+.lt-ie8 {}

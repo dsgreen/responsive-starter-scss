@@ -1,0 +1,184 @@
+/**
+ * ##################################################
+ * ##################################################
+ *  
+ * TYPE
+ *  
+ */
+/**
+ * ##################################################
+ * ##################################################
+ *
+ * RESET
+ * override some normalize stuff
+ *
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+/*
+ odd extra space issue above h6
+*/
+h6 {
+  margin-top: 0;
+}
+/**
+ * -------------------------------------------------- 
+ * MOBILE & UP
+ * --------------------------------------------------
+ */
+/* 
+ * type references:
+ * original method:  http://clagnut.com/blog/348/
+ * updated approach: http://snook.ca/archives/html_and_css/font-size-with-rem
+ * more thoughts:    http://css-tricks.com/css-font-size/
+ *                   http://css-tricks.com/why-ems/
+ *
+ * don't like the 10px default font size, so using a larger 12px starting point
+ * modify as you see fit
+ */
+body {
+//  font: 62.5%/2.4 $sans;
+  font: 12px/2.4 $sans;
+}
+/*
+ the basics
+*/
+h1 {
+  font-size: 3.6em;
+  line-height: 1.333;
+}
+h2 {
+  font-size: 2.4em;
+  line-height: 1;
+}
+h3 {
+  font-size: 1.8em;
+  line-height: 1.333;
+}
+h4,
+h5,
+h6,
+dt,
+legend,
+caption {
+  font-size: 1.4em;
+  line-height: 1.7143;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dt,
+legend,
+caption,
+th {
+  font-weight: normal;
+//  font-weight: bold;
+}
+p,
+li,
+dd,
+td,
+th,
+label,
+input,
+select,
+textarea,
+button,
+address,
+blockquote {
+  font-size: 1.3em;
+  line-height: 1.8462;
+}
+p,
+dd,
+address,
+blockquote {
+  margin-bottom: 1.8462em;
+}
+/*
+ nested list
+*/
+ul li ul {
+  margin-bottom: 0;
+}
+table,
+ul,
+ol,
+dl {
+  margin-bottom: 2.4em;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+address {
+  font-style: normal;
+}
+/*
+ nested sizes
+*/
+li li,
+li p,
+td p,
+blockquote p {
+  font-size: 1em;
+}
+/*
+ additional list formatting
+*/
+ul,
+ol {
+//  margin-left: 2em;
+}
+/* nested */
+li ul,
+li ol {
+  margin-left: 0;
+}
+li ul li {
+  list-style-type: circle;
+}
+ul li {
+  list-style-type: disc;
+}
+/*
+ tables
+*/
+table {
+  width: 100%;
+}
+th {
+  background-color: #eaeaea;
+}
+th,
+td {
+  padding: 0.2em;
+}
+td {
+  text-align: center;
+  border-bottom: 0.1em solid #eaeaea;
+}
+/*
+ other
+*/
+blockquote {
+  span.author {
+    padding-right: 1.4em;
+    display: block;
+    text-align: right;
+  }
+}
+abbr[title] {
+  border-bottom: 0.1em dotted #888;
+}
+abbr[title]:hover {
+  cursor: help;
+}

@@ -1,0 +1,67 @@
+/**
+ * ##################################################
+ * ##################################################
+ *  
+ * LAYOUT
+ *  
+ */
+/**
+ * -------------------------------------------------- 
+ * MOBILE & UP
+ * --------------------------------------------------
+ */
+
+/*
+ http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ http://getbootstrap.com
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+ set a max width for container & center it
+ give it some padding for smaller devices
+*/
+.container {
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 1200px;
+  //  max-width: 1440px; // use a larger or smaller size as appropriate
+}
+
+#skiplink {
+  a {
+    width: 0;
+    height: 0;
+    position: absolute;
+    overflow: hidden;
+    &:active,
+    &:focus {
+      padding: 0.2em;
+      font-size: 1.2em;
+      font-weight: bold;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      top: 0.2em;
+      left: 0.2em;
+      z-index: 5;
+      border: 0.2em solid #ccc;
+      background-color: #dadada;
+    }
+  }
+}
+
+// TODO full width section, for solid bg color w/ .container in it
+// .full-width {
+  // width: 100%;
+// }

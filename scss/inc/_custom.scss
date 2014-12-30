@@ -1,0 +1,246 @@
+/* 	
+	Responsive Starter 12.30.14
+	Site specific styles
+*/
+/**
+ * ##################################################
+ * ##################################################
+ * 	
+ * TYPE
+ *  
+ */
+
+
+/**
+ * ##################################################
+ * ##################################################
+ * 	
+ * FORMS
+ *  
+ */
+
+
+/**
+ * ##################################################
+ * ##################################################
+ * 	
+ * LAYOUT
+ *  
+ */
+/**
+ * -------------------------------------------------- 
+ * MOBILE & UP
+ * --------------------------------------------------
+ */
+body>header {
+  p,
+  nav {
+    margin-left:10px;
+    margin-right:10px;
+  }
+}
+
+/*
+ TODO - make navbar component
+*/
+body > header {
+  p {
+    font-weight: bold;
+    a {
+      text-decoration: none;
+    }
+  }
+  nav {
+    a {
+      display: block;
+      text-decoration: none;
+
+      @media screen and (min-width: 768px) {
+        margin: 0 1em;
+      }
+    }
+    ul {
+      padding-left: 0;
+      font-weight: bold;
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+nav li:first-of-type a {
+  margin-left: 0;
+}
+
+body > footer {
+  p {
+    font-size: 1.2em;
+    line-height: 2em;
+    clear: both;
+    a {
+      text-decoration: none;
+    }
+  }
+  p.top {
+    clear: none;
+  }
+}
+
+#secondary {
+  margin-top: 1em;
+}
+
+/**
+ * -------------------------------------------------- 
+ * MOBILE LANDSCAPE
+ * --------------------------------------------------
+ */
+@media only screen and (min-width: 480px) {
+	
+}
+
+/**
+ * --------------------------------------------------	
+ * TABLET PORTRAIT 768
+ * --------------------------------------------------
+ */
+@media only screen and (min-width: 768px) {
+  /*
+   for solid color header and footer
+  */
+  html,
+  body > header,
+  body > footer {
+    background-color: #eaeaea;
+  }
+
+  body > header nav ul {
+    margin-top:0;
+  }
+  /*
+   linear main navigation bar
+  */
+  body > header {
+    nav {
+      ul {
+        float: left;
+        li {
+          float: left;
+          a {
+            float: left;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  /*
+   back to top links
+  */
+  .top {
+    font-weight: bold;
+    text-align: right;
+  }
+
+  /*
+   smaller font sizes for elements in sidebar
+  */
+  #secondary {
+    h2,
+    p,
+    li {
+      font-size: 1.2em;
+      line-height: 1.8em;
+    }
+    h2 {
+      text-transform: uppercase;
+    }
+    /*
+     buttons in sidebar override
+    */
+    a.btn {
+      max-width: 100%;
+    }
+  }
+}
+
+/**
+ * --------------------------------------------------	
+ * DESKTOP 980
+ * --------------------------------------------------
+ */
+@media only screen and (min-width: 980px) {
+	
+}
+
+/**
+ * --------------------------------------------------	
+ * DESKTOP 1200
+ * --------------------------------------------------
+ */
+@media only screen and (min-width: 1200px) {
+	
+}
+
+/**
+ * ##################################################
+ * ##################################################
+ * 	
+ * CLASSES
+ *  
+ */
+
+
+/**
+ * ##################################################
+ * ##################################################
+ * 	
+ * COLOR
+ *  
+ */
+body > header {
+  p {
+    a {
+      color: #333;
+      &:link,
+      &:active,
+      &:visited {
+        color: #333;
+      }
+      &:hover,
+      &:focus {
+        color: #66c;
+      }
+    }
+  }
+  nav {
+    a {
+      color: #1A1A1A;
+      &:link,
+      &:active,
+      &:visited {
+        color: #1A1A1A;
+      }
+      &:hover,
+      &:focus {
+        color: #fff;
+        background-color: #333;
+      }
+    }
+  }
+}
+body > footer {
+  color: #666;
+  p {
+    color: #666;
+    a {
+      color: #666;
+      &:link,
+      &:active,
+      &:visited {
+        color: #666;
+      }
+    }
+  }
+}
