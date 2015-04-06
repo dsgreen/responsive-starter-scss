@@ -401,6 +401,9 @@ fieldset {
   padding: 0;
   border: none; }
 
+figure {
+  margin: 0; }
+
 /*
  odd extra space issue above h6
 */
@@ -738,6 +741,13 @@ a.button:focus {
     border: 0.2em solid #ccc;
     background-color: #dadada; }
 
+.full-width {
+  width: 100%; }
+  .full-width img {
+    max-width: 100%;
+    width: 100%;
+    height: auto; }
+
 /**
  * ##################################################
  * ##################################################
@@ -844,6 +854,12 @@ img.responsive {
 hr.divider {
   margin: 2em 0; }
 
+/*
+ responsive helpers
+*/
+@media (max-width: 767px) {
+  .hide-sm {
+    display: none; } }
 /**
  * ##################################################
  * ##################################################
