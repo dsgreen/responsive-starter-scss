@@ -117,3 +117,12 @@ img.responsive {
 hr.divider {
   margin: 2em 0;
 }
+
+/*
+ responsive helpers
+*/
+@media (max-width: 767px) {
+  .hide-sm {
+    display: none;
+  }
+}
