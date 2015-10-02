@@ -1,3 +1,3 @@
-_dev/
-config.codekit
-.sass-cache/
+# Workflow
+_dev
+node_modules
